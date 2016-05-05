@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>debeat</title>
+    <link rel="stylesheet" type="text/css" href="debeat.css">
+    <script src="debeat.js"></script>
+  </head>
+  <body>1
+        <div class="warp1">
+      <nav>
+        <div>
+        <h1>扁平化设计研究与发展趋势探索</h1></div>
+      </nav>
+      <div class="bar bar1" >
+        <h2>WHAT</h2>
+        <h3>我们研究什么</h3>
+        <p>什么是扁平化？</p>
+      </div>
+      <div class="bar bar2" >
+        <h2>WHY</h2>
+        <h3>为何研究</h3>
+        <p>扁平化设计的研究背景？</p>
+      </div>
+      <div class="bar bar3">
+        <h2>HOW</h2>
+        <h3>怎么研究</h3>
+        <p>我们的研究方法？</p>
+        <p>预期得到的成果？</p>
+      </div>
+      <div class="bar bar4">
+        <h2>WHY</h2>
+        <h3>研究来干嘛</h3>
+        <p>我们的研究能给带来什么？</p>
+      </div>
+    </div>
+    <div class="warp2">
+      <div class="ppt ppt1">
+        <div class="back" onclick="backPart()">
+          <div class="backcss"></div></div>
+          <div class="title">
+            <h1>WHAT</h1>
+            <h2>我们研究什么</h2>
+            <hr>
+            <!--  分隔栏下会变暗，当你点击时 出现 什么是扁平化。 -->
+            <h3>什么是扁平化？</h3>
+            <!--  再次点击屏幕进入下一页。 -->
+          </div>
+          <div class="next " onclick="next1()">
+            <div class="nextcss"></div>
+          </div>
+        </div>
+        <div class="ppt ppt2">
+          <div class="title">
+            <div class="tFoP2">
+              <h1>扁平化</h1>
+            </div>
+            <div class="tFoP2 tFoP21" onclick="showP211()" >
+              <h2>定义</h2>
+            </div>
+            <div class="paperfP21">
+              <div class="bannerP21" id="bannerP2111" onclick="onpenbannerP2111()">
+                <div class="boxP21">
+                  <p><span>狭义：<span class="ico" id='ico1'></span></span>简化和适当去除阴影、透视、纹理、渐变等3D装饰效果的设计。</p>
+                  <br>
+                  <img src="161RUC2-1.jpg" id="dedede" width="70%" >
+                </div>
+                <div id="outbannerP2111" onmousemove="outbannerP2111()">
+                    <h5>BACK</h5>
+                  </div>
+              </div>
+              <div class="bannerP21" id="bannerP2112">
+                <div class="boxP21">
+                  <p><span>广义：<span class="ico" id='ico2'></span></span>以几何形状、符号化图象的色块为基本元素，且配色舒服的设计。</p>
+                </div>
+              </div>
+            </div>
+            <div class="tFoP2 tFoP23" onclick="hideP211()">
+              <h2>BACK</h2>
+            </div>
+            <div class="tFoP2 tFoP22" onclick="showP212()">
+              <h2>核心特质</h2>
+            </div>
+            <div class="paperfP21">
+              <div class="bannerP21" id="bannerP212">
+                <div class="boxP21">
+                  <p><span>核心：<span class="ico" id='ico3'></span></span>以简单的样式将关键信息有效、快速传递</p>
+                </div>
+              </div>
+            </div>
+            <div class="tFoP2 tFoP23" onclick="hideP212()">
+              <h2>BACK</h2>
+            </div>
+          </div>
+          <div class="back" onclick="back2()">
+            <div class="backcss"></div>
+          </div>
+          <div class="next " onclick="next2()">
+            <div class="nextcss"></div>
+          </div>
+        </div>
+
+
+    <!-- <p></p> -->
+    <div class="ppt ppt3">
+      <div class="title">
+        <h1>WHY</h1>
+        <h2>为何研究</h2>
+        <hr>
+        <h3>研究背景</h3>
+      </div>
+      <div class="back" onclick="back3()">
+        <div class="backcss"></div>
+      </div>
+      <div class="next " onclick="next3()">
+        <div class="nextcss"></div>
+      </div>
+    </div>
+    <div class="ppt ppt4">
+      <div class="title">
+        <h1>研究背景</h1>
+        <h2>有必要</h2>
+        <br>
+        <h3>·扁平化的流行</h3>
+        <h3 class="1">@不管是网页、APP、手机、电脑的UI</h3>
+        <br>
+        <h3>·没有完整系统的知识体系</h3>
+        <h3 class="2">@关于扁平说法不一</h3>
+        <br>
+        <h2>很重要</h2>
+        <br>
+        <h3>·界面设计越来越重要</h3>
+        <h3 class="3">@用户体验</h3>
+        <h3 class="3">@品牌风格</h3>
+        <br>
+        <h3>·扁平化更好地适应社会的需要</h3>
+        <h3 class="4">@信息爆炸，读图时代，物联网</h3>
+        <br>
+      </div>
+      <div class="back" onclick="back4()">
+        <div class="backcss"></div>
+      </div>
+      <div class="next " onclick="next4()">
+        <div class="nextcss"></div>
+      </div>
+    </div>
+    <div class="ppt ppt5">
+      <div class="title">
+        <h1>HOW</h1>
+        <h2>怎么研究</h2>
+        <hr>
+        <p>研究方法</p>
+        <p>预期成果</p>
+      </div>
+      <div class="back" onclick="back5()">
+        <div class="backcss"></div>
+      </div>
+      <div class="next " onclick="next5()">
+        <div class="nextcss"></div>
+      </div>
+    </div>
+    <div class="ppt ppt6">
+      <div class="title">
+        <h1>研究方法&预期成果</h1>
+        <br>
+        <h2>文献研究法  》 一份调研报告</h2>
+        <h2>实验出真知 》一个制作成品</h2>
+      </div>
+      <div class="back" onclick="back6()">
+        <div class="backcss"></div>
+      </div>
+      <div class="next " onclick="next6()">
+        <div class="nextcss"></div>
+      </div>
+    </div>
+    <div class="ppt ppt7">
+      <div class="title">
+        <h1>WHY</h1>
+        <h2>研究来干嘛</h2>
+        <hr>
+        <p>我们的研究能带来什么？</p>
+      </div>
+      <div class="back" onclick="back7()">
+        <div class="backcss"></div>
+      </div>
+      <div class="next " onclick="next7()">
+        <div class="nextcss"></div>
+      </div>
+    </div>
+    <div class="ppt ppt8">
+      <div class="title">
+        <h1>社会意义</h1>
+        <h2>提供参考</h2>
+        <h3>@为了想要学习、讨论、交流扁平化相关方面知识的设计从业者</h3>
+        <h2>促进扁平化设计发展</h2>
+        <h3>@更加多样</h3>
+      </div>
+      <div class="back" onclick="back8()">
+        <div class="backcss"></div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+</body>
+</html>
+<!-- 结构预想
+开头 nav +1个入口 进入后 先上下再左右延展这四个消失
+只有第一个入口通往一个长条 可变 可消失
+长条的左右移动  先左右后上下 上下移动（hieght box 和 article 一起移动） -->

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <title>testForHTMl5</title>
+  <style type="text/css">
+      strong{font-size: 125%}
+  </style>
+</head>
+<body>
+<p>chorme 基本都支持 safari 不能</p><hr/>
+    <input type="number" name="number" min="1" max="100" step="2" value="5" ></input>
+    <input type="number" name="number"  max="100" step="2" placeholder="100"></input>
+    <input type="number" name="number" min="1" step="2"></input>
+    <input type="number" name="number"></input>
+    <h2>关于 Number 我们可以看到</h2>
+    <p>默认<strong>没有 min & max</strong> 且 <strong>step = 1</strong> </p>
+    <p>name: 标识表单提交时的key值</p>
+    <p>Number类的input  默认会<strong>根据限制的区间大小</strong>  确定自己的长度.</p><p>未设置区间大小时，<strong>默认132(126+1*2+2*2)x21(15+1*2+2*2)</strong></p>
+    <p>同时可以填出 <strong>区间之外</strong> 的数字。［不知道会不会允许输自己的长度</p>
+    <input type="email" name="email" placeholder="请输入注册邮箱"/>
+    <p>当表单在提交前，此文本框会自动校验是否符合邮箱的正则表达式。</p>
+    <input type="url" placeholder="请输入网址" name="url"/>
+    <h2>URl</h2>
+    <input type="tel" placeholder="输入电话" name="phone"/>
+    <h2>Tele</h2>
+  <form oninput="output.value=parseInt(range.value)"/>
+    <input type="range" min="0" max="100" step="5" name="range" value="0"/>
+    <output name="output">0<output/>
+</form>
+  <h2>Range & output</h2><p><strong>oninput="output.value=parseInt(range.value)"</strong> 通过这个来连结</p><p>这个可真棒！</p><p>感觉可以用来干很多事with JS</p><p>比如音量 亮度 颜色大小</p> <p>啊，张小火用过这个！</p>
+  <hr>
+    <input type="date" name="datedemo"/>
+        <h3>date</h3>
+    <input type="time" name="datedemo"/>
+        <h3>time</h3>
+    <input type="month" name="datedemo"/>
+        <h3>month</h3>
+    <input type="week" name="datedemo"/>
+        <h3>week</h3>
+    <input type="datetime-local" name="datedemo"/>
+        <h3>datetime-local</h3>
+    <input type="datetime" name="datedemo"/>
+        <h3>datetime</h3>
+        <hr>
+        <input type="color" name='colorPicker'>
+        <hr>
+        <input type="text" autocomplete="on" name="demoAutoComplete" list="autoNames" />
+<datalist id="autoNames">
+       <option  value="实验楼" ></option>
+       <option  value="HTML5" ></option>
+       <option  value="input标签" ></option>
+</datalist>
+</body>
+</html>

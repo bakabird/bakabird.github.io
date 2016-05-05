@@ -1,0 +1,195 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fff;
+    color: #FFF7B6;
+    font-size: 14px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+td,
+th,
+caption {
+    font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    font-size: 100%;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+a {
+    color: #FFF7B6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    border: none;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+input,
+textarea,
+select,
+button {
+    font: 14px "Microsoft YaHei", "微软雅黑", Arial, Verdana, Helvetica, Arial, sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+
+/* css common */
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/*清除浮动*/
+
+body {
+    background: #ececec;
+    color: rgba(209, 19, 29, 0.66);
+}
+
+.article {
+    background: rgba(123, 144, 201, 0.44);
+    width: 80vw;
+    margin: 3vw auto;
+    padding: 30px;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 4em;
+    line-height: 3;
+}
+
+h2 {
+    font-size: 3em;
+    line-height: 2.7;
+}
+
+h3 {
+    font-size: 2.1em;
+    line-height: 2.5
+}
+
+p {
+    text-indent: 2em;
+    font-size: 1.2em;
+    line-height: 2;
+}
+
+hr {
+    border-color: rgba(143, 9, 9, 0.2);
+}
+
+time {
+    line-height: 5;
+    color: rgba(148, 15, 3, 0.66);
+}
+
+.drawing {
+    background: #6C7F80;
+    width: 80vw;
+    margin: 3vw auto;
+    padding: 30px;
+}
+
+.works {
+    background: #51557C;
+    width: 80vw;
+    margin: 3vw auto;
+    padding: 30px;
+}
+
+@media only screen and (max-width: 991px) {
+    .block {
+        margin: 1.5vw 1.5vw;
+        height: 40vh;
+        width: 30.3vw;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .block {
+        margin: 1.5vw 1.5vw;
+        height: 37.4vh;
+        width: 47vw;
+    }
+}

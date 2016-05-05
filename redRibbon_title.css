@@ -1,0 +1,16 @@
+/*博客内一般的头部设置都在这里 */
+/*在html中是header标签的部分*/
+header {
+    font-size: 25px;
+    line-height: 45px;
+    width: 95%;
+    height: 50px;
+    margin: 8px auto;
+    text-indent: 1em;
+    color: #bbb;
+    font-family: cursive;
+    border-bottom: 1px solid #959595;
+}
+#title {
+    float: left;
+}

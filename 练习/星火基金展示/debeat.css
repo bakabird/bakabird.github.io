@@ -1,0 +1,151 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }
+body { background:#fff; color:#555; font-size:14px; font-family: Verdana, Arial, Helvetica, sans-serif; }
+td,th,caption { font-size:14px; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
+a { color:#555; text-decoration:none; }
+a:hover { text-decoration:underline; }
+img { border:none; }
+ol,ul,li { list-style:none; }
+input, textarea, select, button { font:14px "Microsoft YaHei","微软雅黑",Arial,Verdana,Helvetica,Arial,sans-serif; }
+table { border-collapse:collapse; }
+html {overflow-y: scroll;}
+/* css common */
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+.clearfix { *zoom:1; }
+/*清除浮动*/
+
+html{max-height: 1vh;overflow: hidden;}
+body{width: 100vw;height: 100vh;}
+/*导航界面*/
+/*第一部分*/
+.warp1{width: 120vw;height: 100vh;-webkit-transition: z-index 0 ease-in 1s;
+-o-transition: z-index 0 ease-in 1s;
+transition: z-index 0 ease-in 1s;position: absolute;z-index: 3;}
+.bar{height: 95vh;float: left;-webkit-transition:top 1s,color 700ms,background-color 700ms,width 300ms ;
+-moz-transition:top 1s,color 700ms,background-color 700ms,width 300ms ;
+-o-transition:top 1s,color 700ms,background-color 700ms,width 300ms ;
+transition:top 1s,color 700ms,background-color 700ms,width 300ms ;position: relative;top: 0;color: #fff;text-align: center;}
+  .bar h2{font-size: 4.6vw;display: block;margin-top: 20vh;}
+  .bar h3{font-size: 3.6vw;display: block;margin: 3vh auto;}
+  .bar p{font-size: 1.5vw;display:block;margin-top: 10vh;color: rgba(255, 255, 255, 0.71)}
+  .bar p~p{margin-top: 1vh;}
+
+  .bar1{width: 25vw;background-color: #C94B48;}
+  .bar2{width: 25vw;background-color: #31518D}
+  .bar3{width: 25vw;background-color:#D28369}
+  .bar4{margin-right: 10vw;width: 26vw;background-color: #477B80;}
+  /*@media screen and (max-width: 768px){
+  .bar1{width: 50vw;height: 46vh;float: left;background-color:red }
+  .bar2{width: 50vw;height: 46vh;float: left;background-color: blue}
+  .bar3{width: 50vw;height: 46vh;float: left;background-color: green}
+  .bar4{width: 50vw;height: 46vh;float: left;background-color: pink}
+  nav{width: 100vw;height: 8vh;}
+  }*/
+
+  /*营造聚光灯的效果—开始
+
+catch 》抓取
+saft 》 无影响
+press 》 按
+softpress 》 轻按
+beat  》 捶打
+  */
+    .catch{width: 30vw}
+    .safe{width:25vw;}
+    .touch{width: 23vw}
+    .press{width: 22.5vw}
+    .beat{width: 22vw}
+    .catch p{color: #fff}
+    .safe,.touch,.press,.beat,.touch p,.press p,.beat p,.safe p{color: #666;}
+
+  .pressbar1{background: #522322;}
+  .pressbar2{background: #17263C;}
+  .pressbar3{background: #51352C;}
+  .pressbar4{background: #203536;margin-right: 10vw;}
+    /*营造聚光灯的效果—结束*/
+
+
+nav{width: 100vw;height: 13vh;background-color: #F3F3F3;min-height: 30px;overflow: hidden;position: relative;bottom: 0;-webkit-transition: bottom 1s;
+-o-transition: bottom 1s;
+transition: bottom 1s;}
+nav div{margin:  2.9vh 0 0 0 ;}
+nav  div h1{font-size: 4.4vh;display:block;text-align: center;color: #444;font-weight: bold;}
+nav  div h1:after{
+  content: '点击进入下一环节';font-size:1vh;
+}
+nav:hover h1{color: #16528e;}
+
+
+
+/*第二部分*/
+.warp2{width: 100vw;overflow: hidden;height:100vh;background-color: #dadada;position: absolute;top:0;z-index: 1;}
+.ppt{position: absolute;width: 100vw;height: 100vh;float: left;-webkit-transition: left 1s;
+-o-transition: left 1s;
+transition: left 1s;}
+.ppt1{background-color: #C94B48;left: 0;}
+.ppt2{background-color: #C94B48;left:100vw;}
+/*泡泡糖2*/
+.tFoP2{width: 100%;height: 40vh;-webkit-transition: all 2s;
+-o-transition: all 2s;
+transition: all 2s;overflow: hidden;}
+.tFoP21{background-color: #522322;color: #666;height: 30vh;}
+.tFoP21:hover,.tFoP22:hover{background-color: #703232;color: #B1B1B1;}
+.tFoP22{background-color: #522322;color: #666;height: 30vh;}
+.tFoP2 h2{height: 30vh;line-height: 30vh;}
+.tFoP23{height: 10vh;display: none;}
+.tFoP23 h2{font-size: 6vh;line-height: 10vh;}
+.paperfP21{display: block;width: 100%;height: 0;background-color: #F2EEDD;color: #27013C;overflow: hidden;}
+.paperfP21 p{text-align: left;line-height: 6vh;}
+.paperfP21 p>span{float: left;height: 14vh;}
+.bannerP21{width: 100%;height: 25vh;padding: 5vh 0;background: #ECE8D9;-webkit-transition: all 2s;
+-o-transition: all 2s;
+transition: all 2s;}
+#bannerP2111{top:20vh;}
+#bannerP2112{top:55vh;}
+#bannerP212{height: 50vh;padding: 10vh 0;}
+.bannerP21:hover{background: #FFFEE3;}
+.boxP21{width: 80vw;margin: 0 auto;}
+/*ppt2结束*/
+.ppt3{background-color:#31518D ;left: 100vw}
+.ppt4{background-color:#31518D;left: 100vw;overflow: auto;}
+.ppt4 h3:hover >.1,.2,.3,.4,.5{display: block;}
+.ppt5{background-color:#D28369;left: 100vw}
+.ppt6{background-color: #D28369;left: 100vw}
+.ppt7{background-color: #477B80;left: 100vw}
+.ppt8{background-color: #477B80;left: 100vw}
+/*ppt文字*/
+.title{font-size: 20vh;text-align: center;color: #fff;}
+.title h2{font-size: 10vh;}
+.title h3{font-size: 7vh;}
+.title p{font-size: 5vh;}
+/*下一张*/
+.next{position: absolute;right: 0;width:5vw;height: 100vh;max-width: 50px;top:0;}
+.nextcss{width: 0px;height: 100vh;max-width: 50px;-webkit-transition: width 700ms,background-color 70ms;
+-o-transition: width 700ms,background-color 70ms;
+transition: width 700ms,background-color 70ms;float: right;}
+.next:hover .nextcss{-webkit-transition: width 700ms,background-color 70ms;
+-o-transition: width 700ms,background-color 70ms;
+transition: width 700ms,background-color 70ms;background-color: rgba(43, 43, 43, 0.3);width: 5vw;}
+/*上一张*/
+.back{position: absolute;left:0;width: 5vw;height: 100vh;max-width: 50px;top:0;}
+.backcss{width: 0px;height: 100vh;max-width: 50px;-webkit-transition: width 700ms,background-color 70ms;
+-o-transition: width 700ms,background-color 70ms;
+transition: width 700ms,background-color 70ms;}
+.back:hover .backcss{background-color: rgba(43, 43, 43, 0.3);width: 5vw;}
+
+.ico{width:7vh;height: 7vh;display: block;float: left;}
+#ico1{background: url('book122.png');background-size: 100%}
+#ico2{background: url('books43.png');background-size: 100%}
+#ico3{background: url('atom26.png');background-size: 100%}
+
+#outbannerP2111{
+    position: absolute;
+    bottom: 5vw;
+    height: 0;
+    font-size:0;
+    width: 100%;
+    display:none;
+    margin: 0 auto;
+}
+#dedede{display: none;}

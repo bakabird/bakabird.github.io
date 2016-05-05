@@ -1,0 +1,77 @@
+<!-- 会变色
+显示当前的时间
+扁平化
+-->
+<!DOCTYPE html>
+<html lang="zh-ch">
+  <head>
+    <meta charset="UTF-8">
+    <title>clockforwork</title>
+        <script  src="clock.js" type="text/javascript" charset="utf-8" async defer>
+      </script>
+    <style type="text/css">
+    body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }
+    body { background:#fff; color:#555; font-size:14px; font-family: Verdana, Arial, Helvetica, sans-serif; }
+    td,th,caption { font-size:14px; }
+    h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+    address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
+    a { color:#555; text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    img { border:none; }
+    ol,ul,li { list-style:none; }
+    input, textarea, select, button { font:14px "Microsoft YaHei","微软雅黑",Arial,Verdana,Helvetica,Arial,sans-serif; }
+    table { border-collapse:collapse; }
+    html {overflow-y: scroll;}
+    /* css common */
+    .clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+    .clearfix { *zoom:1; }
+    /*清除浮动*/
+    html{max-height: 1vh;overflow: hidden;}
+    body{width: 100vw;height: 100vh;background: #8D6D6D;}
+    input{float: left;}
+    #time{
+          width: 50vw;
+    background: #B04D4D;
+    height: 100vh;
+    color: #FFF1BC;
+    text-align: center;
+    font-size: 4.1em;
+    /* min-height: 90vh; */
+    /* overflow: auto; */
+    border: none;
+    }
+    #on{
+      width: 20vw;
+    height: 200p;
+    display: block;
+    font-size: 15vh;
+    padding: 42.5vh 0;
+    border: none;
+    color: #74485C;
+    /* line-height: 27.2px; */
+    position: relative;
+    background: rgb(131, 95, 95);
+    /* left: -1vw; */
+    }
+    #timeShow{
+          /* height: 100vh; */
+    heihgt: 100vh;
+    text-align: center;
+    float: right;
+    /* display: block; */
+    height: 100vh;
+    width: 30vw;
+    background: #798949;
+    font-size: 4.1em;
+    margin: 10m;
+    padding-top: 38vh;
+    /* line-height: 4.1em; */
+    margin-top: 1;
+    }
+    </style>
+  </head>
+  <body>
+     <input type="text" id="time" value ="25">
+      <input type="button" id='on' value="分钟" onclick="timeset()" type="audio/mpeg">
+  </body>
+</html>

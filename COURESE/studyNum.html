@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+  <meta charset="UTF-8">
+  <title>我学习上的一些指数</title>
+  <style>
+    .chanel{width: 90vw;height: 25px;margin-top: 40px;}
+    .kind{color: #ccc;}
+    .bowl{width: 95%;position: relative;height: 100%;background: #ccc}
+    .water{width: 90%;position: absolute;left: 0;height: 100%;background: #6cf}
+  </style>
+  <script type="text/javascript">
+  window.onload=function (){
+        var chanel = document.getElementsByClassName('chanel');
+        var bowl = document.getElementsByClassName('bowl');
+        var water = document.getElementsByClassName('water');
+        var kind = document.getElementsByClassName('kind');
+
+        var kinds = ['线性代数可汗','曲根一万词'];
+        var waters = [per(7,143),per(7,74)];
+
+        for (var i = chanel.length - 1,j=0; j <= i ; j++) {
+          kind[j].innerHTML = kinds[j] +' ' + waters[j];
+          water[j].style.width = waters[j];
+        }
+}
+
+function per(a,b){
+  return c = a/b*100 + '%'
+}
+  </script>
+</head>
+<body>
+  <div class="chanel">
+    <p class="kind"></p>
+    <div class="bowl"><div class="water"></div></div>
+  </div>
+  <br clear="all"/>
+  <div class="chanel">
+    <p class="kind"></p>
+    <div class="bowl"><div class="water"></div></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+/*这个主管的是最基本的文章展示模式*/
+/*首页 和 收集箱 正文部分都用的则个*/
+a {
+    color: #81A6CA;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+#dailyP {
+    font-size: 20px;
+    float: right;
+    position: relative;
+}
+
+#a_paperbox {
+    width: 600px;
+    max-width: 90%;
+    margin: 50px auto;
+    border: 1px solid #e7e7e7;
+    border-bottom: none;
+}
+
+#a_paperbox h2 {
+    color: #000;
+    font-style: italic;
+    font-size: 1em;
+}
+
+#a_paperbox article {
+    height: 2em;
+    line-height: 2em;
+    text-indent: 1.2em;
+    font-size: 1.2em;
+    color: #81A6CA;
+    padding: 0.2em;
+    border-bottom: 1px solid #BDBDBD;
+}
+
+#a_paperbox article>a{
+    position: relative;
+}
+
+
+#a_paperbox article:hover a {
+    font-weight: bold;
+    color: #7794D4;
+    text-decoration: none;
+}
+
+#box{    position: absolute;
+    top: 5px;
+    right: 23.5vw;}
+
+#box>a{
+    display: inline-block;
+    width: initial;
+}
+
+#box img{
+    width: 50px;
+}

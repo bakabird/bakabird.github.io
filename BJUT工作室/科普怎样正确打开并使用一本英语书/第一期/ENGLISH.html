@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="cn">
+  <head>
+    <meta charset="UTF-8">
+    <title>怎样正确打开一本英语书正稿</title>
+    <style type="text/css">
+    html{background:url("http://7xp7u3.com1.z0.glb.clouddn.com/英语书背景.jpg");background-size: 300px;}
+    body{background-color: rgba(186, 174, 169, 0.88);margin: 0;padding: 0;min-height:1200px;}
+    #box{width: 800px; height: 600px; margin: 0 auto; position: relative; box-shadow: 5px 0px 24px #797369;font-family: "Microsoft YaHei","微软雅黑",Arial,Helvetica,SimHei,sans-serif;}
+    .articleforpages{height: 340px;width: 580px;overflow: auto;background-color: rgba(201, 167, 146, 0.11);line-height: 1.6;margin: 50px auto 10px;padding: 20px;font-size: 14px;color: #460803;text-indent: 2em}
+    .redstress{color: #A40A00;font-weight: bold;font-size: 16px;}
+    .redstress:hover{color: red;}
+    #articleforpage2 p{margin: 0 auto;line-height: 26px;}
+    #articleforpage3{text-indent: 0;padding: 20px 30px;width: 560px;}
+    #articleforpage3 span{font-weight: bold;}
+    #articleforpage4 p{margin:8px auto;}
+    #articleforpage5 {text-align: center;}
+    .next{opacity: 0;width: 90px; height: 90px; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); position: absolute; right: 0; bottom: 0; }
+    #next1{z-index: 400}
+    #next1:checked,#next1:checked ~ #cover>p,#next1:checked ~ #cover>p~p{display: none;}
+    #next1:checked ~ #back1{display: block;}
+    #next1:checked ~ #cover{
+    transform: rotateY(-268deg);
+    transform-origin:right center;
+    -webkit-transform: rotateY(-268deg);  /* Safari 和 Chrome */
+    -webkit-transform-origin:left center;
+    -moz-transform: rotateY(-268deg); /* Firefox */
+    -moz-transform-origin:left center;
+    }
+    #next1:hover ~ #cover{
+    transform: rotateY(-20deg);
+    transform-origin:right center;
+    -webkit-transform: rotateY(-20deg); /* Safari 和 Chrome */
+    -webkit-transform-origin:left center;
+    -moz-transform: rotateY(-20deg);  /* Firefox */
+    -moz-transform-origin:left center;
+    }
+    #next2{z-index: 300}
+    #next2:checked{display: none;}
+    #next2:checked ~ #cover{
+    transform: rotateY(-270deg);
+    transform-origin:right center;
+    -webkit-transform: rotateY(-270deg);  /* Safari 和 Chrome */
+    -webkit-transform-origin:left center;
+    -moz-transform: rotateY(-270deg); /* Firefox */
+    -moz-transform-origin:left center;
+    }
+    #next2:checked ~ #back2{display: block;}
+    #next2:checked ~ #page1{transform: rotateY(-268deg); transform-origin:right center; -webkit-transform: rotateY(-268deg);  /* Safari 和 Chrome */ -webkit-transform-origin:left center; -moz-transform: rotateY(-268deg); /* Firefox */ -moz-transform-origin:right center; } #next2:hover ~ #page1{transform: rotateY(-20deg); transform-origin:right center; -webkit-transform: rotateY(-20deg); /* Safari 和 Chrome */ -webkit-transform-origin:left center; -moz-transform: rotateY(-20deg);  /* Firefox */ -moz-transform-origin:left center; } #next3{z-index: 200}
+    #next3:checked{display: none;}
+    #next3:checked ~ #back3{display: block;}
+    #next3:checked ~ #page1{transform: rotateY(-270deg); transform-origin:right center; -webkit-transform: rotateY(-270deg);  /* Safari 和 Chrome */ -webkit-transform-origin:left center; -moz-transform: rotateY(-270deg); /* Firefox */ -moz-transform-origin:right center; }
+    #next3:checked ~ #page2{transform: rotateY(-268deg); transform-origin:right center; -webkit-transform: rotateY(-268deg);  /* Safari 和 Chrome */ -webkit-transform-origin:left center; -moz-transform: rotateY(-268deg); /* Firefox */ -moz-transform-origin:right center; background-color: #BEBFB0; }
+    #next3:hover ~ #page2{transform: rotateY(-20deg); transform-origin:right center; -webkit-transform: rotateY(-20deg); /* Safari 和 Chrome */ -webkit-transform-origin:left center; -moz-transform: rotateY(-20deg);  /* Firefox */ -moz-transform-origin:left center; } #next4{z-index: 100}
+    #next4:checked{display: none;}
+    #next4:checked ~ #back4{display: block;}
+    #next4:checked ~ #page2{transform: rotateY(-270deg); transform-origin:right center; -webkit-transform: rotateY(-270deg);  /* Safari 和 Chrome */ -webkit-transform-origin:left center; -moz-transform: rotateY(-270deg); /* Firefox */ -moz-transform-origin:right center; }
+    #next4:checked ~ #page3{transform: rotateY(-268deg); transform-origin:right center; -webkit-transform: rotateY(-268deg);  /* Safari 和 Chrome */ -webkit-transform-origin:left center; -moz-transform: rotateY(-268deg); /* Firefox */ -moz-transform-origin:right center; }
+    #next4:hover ~ #page3{transform: rotateY(-20deg); transform-origin:right center; -webkit-transform: rotateY(-20deg); /* Safari 和 Chrome */ -webkit-transform-origin:left center; -moz-transform: rotateY(-20deg);  /* Firefox */ -moz-transform-origin:left center; }
+    #next5{z-index: 27}
+    #next5:checked{display: none;}
+    #next5:checked ~ #back5{display: block;}
+    #next5:checked ~ #page3{transform: rotateY(-270deg); transform-origin:right center; -webkit-transform: rotateY(-270deg);  /* Safari 和 Chrome */ -webkit-transform-origin:left center; -moz-transform: rotateY(-270deg); /* Firefox */ -moz-transform-origin:right center; }
+    #next5:checked ~ #page4{transform: rotateY(-268deg); transform-origin:right center; -webkit-transform: rotateY(-268deg);  /* Safari 和 Chrome */ -webkit-transform-origin:left center; -moz-transform: rotateY(-268deg); /* Firefox */ -moz-transform-origin:right center; }
+    #next5:hover ~ #page4{transform: rotateY(-20deg); transform-origin:right center; -webkit-transform: rotateY(-20deg); /* Safari 和 Chrome */ -webkit-transform-origin:left center; -moz-transform: rotateY(-20deg);  /* Firefox */ -moz-transform-origin:left center; }
+    .back{width: 70px; height: 600px; left: -25px; top: 0; position: absolute; opacity: 0; }
+    #back1{z-index: 500;display: none;}
+    #back1:checked ~ #cover>p,#back1:checked ~ #cover>p~p{display: none;}
+    #back2{z-index: 500;display: none;}
+    #back3{z-index: 500;display: none;}
+    #back4{z-index: 500;display: none;}
+    #back5{z-index: 500;display: none;}
+    #back1:hover ~ #cover{transform: rotateY(-264deg); transform-origin:right center; -webkit-transform: rotateY(-264deg);  /* Safari 和 Chrome */ -webkit-transform-origin:left center; -moz-transform: rotateY(-264deg); /* Firefox */ -moz-transform-origin:left center; }
+    #back2:hover ~ #page1{transform: rotateY(-264deg); transform-origin:right center; -webkit-transform: rotateY(-264deg);  /* Safari 和 Chrome */ -webkit-transform-origin:left center; -moz-transform: rotateY(-264deg); /* Firefox */ -moz-transform-origin:left center; }
+    #back3:hover ~ #page2{transform: rotateY(-264deg); transform-origin:right center; -webkit-transform: rotateY(-264deg);  /* Safari 和 Chrome */ -webkit-transform-origin:left center; -moz-transform: rotateY(-264deg); /* Firefox */ -moz-transform-origin:left center; }
+    #back4:hover ~ #page3{transform: rotateY(-264deg); transform-origin:right center; -webkit-transform: rotateY(-264deg);  /* Safari 和 Chrome */ -webkit-transform-origin:left center; -moz-transform: rotateY(-264deg); /* Firefox */ -moz-transform-origin:left center; }
+    #back5:hover ~ #page4{transform: rotateY(-264deg); transform-origin:right center; -webkit-transform: rotateY(-264deg);  /* Safari 和 Chrome */ -webkit-transform-origin:left center; -moz-transform: rotateY(-264deg); /* Firefox */ -moz-transform-origin:left center; }
+    .paper{width: 800px; height: 600px; position: absolute; top:0; -webkit-transition:transform 900ms,background-color 1ms 270ms; -o-transition:transform 900ms,background-color 1ms 270ms; transition:transform 900ms,background-color 1ms 270ms; -webkit-transform-origin:left center ; -ms-transform-origin:left center ; -o-transform-origin:left center ; transform-origin:left center ; box-shadow: 7px 0px 10px -2px rgba(109, 77, 77, 0.68) inset; -webkit-perspective:150; }
+    .paper h1{text-align: center;color: #570201;font-size: 32px;margin-bottom: 5px;position: relative;top:-5px;}
+    .linefortop{background: rgba(187, 98, 45, 0.25);height: 3px;border:none;}
+    #cover{z-index: 300; background: rgba(185, 180, 173, 0.73) 0px -250px url("http://7xp7u3.com1.z0.glb.clouddn.com/怎样正确打开一本英语书-封面.jpg"); background-size:100%; box-shadow: 6px 0px 4px 0px rgba(111, 92, 83, 0.65) inset; }
+    #cover > p{position: absolute;bottom: 0;right: 10px;color: #88774A;width: 20px;}
+    #cover > p ~ p{position: absolute;bottom: -5px;right: 188px;color: #88774A;width: 200px;}
+    #cover > a{    position: absolute; bottom: 10px; display: block; width: 640px; left: 22px; height: 250px; }
+    #page1{z-index: 200; background: rgba(185, 180, 173, 0.73) url("http://7xp7u3.com1.z0.glb.clouddn.com/pagebackground.jpg") no-repeat;background-size:100% 100%; }
+    .blockforpage{width: 215px;height: 300px;margin: 0 auto;font-size: 14px;color: #FFFABE;position: relative;line-height: 1.6;background-color: #fff;box-shadow: -2px 2px 15px #dadada;padding-top: 20px;}
+    .photoforblockfpage1{background:  url("http://7xp7u3.com1.z0.glb.clouddn.com/张学友.jpg"); box-shadow: 180px 0px rgba(19, 18, 19, 0.32) inset;background-size: 50%;width: 156px; margin: 0 auto; height: 220px; /* text-align: center; */ padding: 10px;}
+    .photoforblockfpage1 p span,.photoforblockfpage1 a span{background-color: rgb(53, 0, 0)}
+    .wordfphotoforblockfpage1{color: #153140;width: 215px;position: absolute;bottom: 0;height: 50px;text-align: center;}
+    #page1 .blockforpage a{color: #FFFABE;}
+    #page1 .blockforpage a:hover{color: #fff;}
+    .blockforpage p:hover{color: #fff;}
+    #blockforpage1{left: -140px;top:50px;}
+    #blockforpage2{left: 150px;top: -270px;}
+    #blockforpage2  .photoforblockfpage1{background: url("http://7xp7u3.com1.z0.glb.clouddn.com/doge.jpeg");background-size: auto 100%; }
+    #page2{z-index: 100;
+    background: rgba(185, 180, 173, 0.73) 200% url("http://7xp7u3.com1.z0.glb.clouddn.com/pagebackground.jpg");
+    background-size:contain;}
+    #page3{z-index: 50;background: rgba(185, 180, 173, 0.73) 50% 15% url("http://7xp7u3.com1.z0.glb.clouddn.com/pagebackground.jpg");
+    background-size:contain;}
+    #page3 p{margin: 20px 39px;font-size: 15px;}
+    #page4{z-index: 25;background: rgba(185, 180, 173, 0.73) 50% 15% url("http://7xp7u3.com1.z0.glb.clouddn.com/pagebackground.jpg");font-size: 14px;}
+    #page4 img{margin: 0 auto;display: block;}
+    #page4 img~p{margin: 3px auto 5px;}
+    #imginpage4-left{width:270px;float: left;}
+    #imginpage4-right{width:270px;float: right;}
+    #page4plus{z-index: 12;background: rgba(185, 180, 173, 0.73) 150% 15% url("http://7xp7u3.com1.z0.glb.clouddn.com/pagebackground.jpg");font-size: 14px;}
+    #page5justforshadow{
+    background-size:contain;box-shadow: -25px 0px 3px rgba(97, 90, 79, 0.62);}
+    /*    m站小图 开始*/
+    .boxform{width: 40px;height: 40px;heiggebackground 40px;background-color:rgba(218, 218, 218, 0.48);overflow: hidden;}.holeforword{font-size: 23px;margin-left: 8px;text-decoration:none;color: rgba(113, 39, 39, 0.61);line-height: 40px;}.boxform:hover,.boxform:hover .holeforword{background-color: rgba(199, 129, 158, 0.52);color: #85160A;text-decoration: none;}
+    /*m站常规设置*/
+    #mforenglish{position: absolute;top: 90px;right:-40px;}
+    /*m站 结束*/
+    #ximafeng{position: absolute;top: 180px;right:-40px;}
+    /*微博开始*/
+    #weibofenglish{right:-40px;position: absolute;top:400px;}
+    /*微博结束*/
+    /*白云开始*/
+    /*白云常规设置*/
+    #baiyunfeng{bottom: 293px;right: -40px;position: absolute;}
+    /*白云结束*/
+    </style>
+  </head>
+  <body>
+    <footer id="box">
+      <input name="page1" type="radio" id="next1" class="next">
+      <input name="page2" type="radio" id="next2" class="next">
+      <input name="page3" type="radio" id="next3" class="next">
+      <input name="page4" type="radio" id="next4" class="next">
+      <input name="page5" type="radio" id="next5" class="next">
+      <input name="page1" type="radio" id="back1" class="back">
+      <input name="page2" type="radio" id="back2" class="back">
+      <input name="page3" type="radio" id="back3" class="back">
+      <input name="page4" type="radio" id="back4" class="back">
+      <input name="page5" type="radio" id="back5" class="back">
+      <footer id="cover" class="paper">
+        <p>下一页</p>
+        <p>点击查看原文</p>
+        <a href="http://www.jjwxc.net/onebook.php?novelid=1780321&chapterid=1" title="到晋江去查看原文" target="_blank"></a>
+      </footer>
+      <footer id="page1" class="paper">
+        <h1>演职</h1>
+        <hr class="linefortop">
+        <footer class="blockforpage" id="blockforpage1">
+          <footer class="photoforblockfpage1">
+            <p><a href="http://weibo.com/u/3301494975?from=feed&loc=at&nick=%E6%9C%95%E5%80%9A%E6%9A%AE%E8%80%8C%E7%9C%A0" title="到她的微博去勾搭"><span> 作 者 </span>： 暮 眠 </a></p>
+            <p><a href="http://weibo.com/fuckysexygirlie" title="安抚一下这位少女吧"><span> 策 导 </span>:主公【B.J.U.T.】</a></p>
+            <p title="声音特别软的妹子，和R在同居！！啊，我也不知道为什么！"><span> 后 期 </span>:言兼【B.J.U.T.】</p>
+            <p title="和言兼在同居！！啊，我也不知道为什么！"><span>手绘美工</span>:R【B.J.U.T.】</p>
+            <p title="非常苦逼地方，只有几个人，而且部长还是个白痴，要哭了，快来人呀，救救他吧！"><span> 宣 传 </span>：BJUT 宣传部</p>
+          </footer>
+        </footer>
+        <footer  class="blockforpage" id="blockforpage2">
+          <footer class="photoforblockfpage1">
+            <p style=" position: relative;top: 150px;"><a href="http://weibo.com/p/1005053628209060/home?from=page_100505&amp;mod=TAB#place" title="不过他的微博好像好久没登了，喂！"><span> C V </span>:研喵【B.J.U.T.】</a></p>
+          </footer>
+        </footer>
+      </footer>
+      <footer id="page2" class="paper">
+        <h1>剧本</h1>
+        <hr class="linefortop">
+        <footer class="articleforpages" id="articleforpage2">
+          <p>各位朋友们大家好，我是本次YY3838438频道科普专栏的音频讲师（你丫给本大爷死远点）</p>
+          <p>废话不多说，让我们直切主题——怎样正确打开并使用一本英语书。</p>
+          <p>不要问我一本书而已有什么好科普的！这种傻问题等你听完本堂讲课后相信这辈子都不会说得出来！！！</p>
+          <p>首先，相信现在正在收听的都是汉纸朋友们吧。如果你正啃着泡面准备挑灯夜读，又或是刚打完球回来打算通宵打DOTA。正想打开英语书，也有可能旁边已经摊着一本英语书，都请先——</p>
+          <br>
+          <p class="redstress">不要随意打开你的英语书！</p>
+          <br>
+          <p class="redstress">千万不要随意打开你的英语书！！！</p>
+          <p class="redstress">如果已经打开了的赶快合上！赶快合上啊听到没有！！！</p>
+          <br>
+          <p>不要问我为何态度如此亢奋激动，我并未如你们心中所想一般打了鸡血，或是喝了某些劣质奶粉。在这个基佬当道、腐女横行的年代，拟人什么的几乎遍地皆是啊有！木！有！</p>
+          <p>你的英语书极有可能前一秒还稳稳当当地躺在你的书包里，下一秒就从不知哪儿来的烟雾里走出来。</p>
+          <br>
+          <p>不要幻想你家英语书会变成妖孽魅惑受躺在你床上摆出各种撩人的姿势，或是天然呆萌受坐在你书桌上咬着指甲泪眼汪汪。</p>
+          <p>你把人生想得太PREFECT了啊亲！这社会太特么凶残了啊有木有！！！以上情况出现的几率几乎可以追溯到远古时代某只翼手龙翼脚龙翼腿龙已经开始吃白米饭了好瓦！！</p>
+          <br>
+          <p>那么亲你一定会问，那么真实情况呢？真实情况其实没有你想象得那么不堪，但是也好不到那里去！要是亲觉得自己是个拥有玻璃心、在除夕夜街头放飞理想的有志青年，我奉劝你一句还是不要听下去了，以免破坏你向着夕阳奔跑的心情。</p>
+          <br>
+          <p>真相就是——嘭地一声或是嘣地一声，白色黑色或红色的烟雾中走出了一个英俊阳光的美骚年。</p>
+          <br>
+          <p class="redstress">——对滴，你没有听错，是个美骚年。</p>
+          <br>
+          <p>不要说什么英语书好啊！不要说什么美骚年好啊！不是和刚刚描述的情况差不多嘛，照样地压上去然后啪啪啪嘛。</p>
+          <p>孩纸，你太天真了。特么的人家不是人啊！特么的反人类极限啊！特么的你见过长得白白净净的美骚年扑上来力气堪比人猿泰山吗！</p>
+          <br>
+          <p>什么？你说为什么一定是攻？</p>
+          <p>请把头伸出窗外仰角四十五度看一下天空，没有星星对吧。对啊！没有星星啊！！！</p>
+          <br>
+          <p>英语书啊亲！他是一本英语书啊亲！！！</p>
+          <p>腹黑清秀的数学、气质如兰的语文、温柔似水的物理、阳光健气的体育、金丝边眼镜偶尔奸笑的化学……</p>
+          <p>可是人家是一本英语书！看清现实面对人生吧亲，英语书啊！！！</p>
+          <br>
+          <p>如果你喜欢你的英语书，并且为此感到乐此不疲，那么我自然是无话可说了。但是若你对于你的英语书无感甚至厌恶，那么你大可以从这一刻这一秒开始事事小心。</p>
+          <p>于是本着乐于助人积极向上的既伟大又光荣的党与人民交由的使命，在此列出以下几点为你科普怎样正确打开并使用一本英语书。</p>
+        </footer>
+        <!-- 剧本结束   -->
+      </footer>
+      <footer id="page3" class="paper">
+        <h1>感言</h1>
+        <hr class="linefortop">
+        <footer class="articleforpages" id="articleforpage3">
+          <p><span>主公</span>：拖了很久，大家都辛苦了，希望可以越来越好吧！</p>
+          <p><span>研喵</span>：不好意思拖了这么久还弄成了这样！但是！感觉自己是坨萌萌哒狼粪！</p>
+          <p><span>言兼</span>：后期新人表示拿到干音无从下手……有点想吃屎……</p>
+          <p><span> &nbsp&nbspR &nbsp&nbsp</span> :     ( ° _ ° )也很想吃屎......</p>
+          <p><span>大潍</span>(BJUT宣传部)：发剧祝贺～ 欢迎大家继续关注我们！代码、宣传上有想交流的欢迎加我 QQ874189103。</p>
+          <p><span>甘药</span>(BJUT宣传部)：发剧祝贺\(≧▽≦)/</p>
+        </footer>
+      </footer>
+      <footer id="page4" class="paper">
+        <h1>我们</h1>
+        <hr class="linefortop">
+        <h4></h4>
+        <footer class="articleforpages" id="articleforpage4">
+          <footer id="imginpage4-left">
+            <img src="http://7xp7u3.com1.z0.glb.clouddn.com/校徽.jpg" width="100px" height="100px">
+            <p style="text-align:center;text-indent:0;">社徽</p>
+          </footer>
+          <footer id="imginpage4-right">
+            <img src="http://7xp7u3.com1.z0.glb.clouddn.com/微信公众号.png" width="100px" height="100px">
+            <p style="text-align:center;text-indent:0;">微信公众号</p>
+          </footer>
+          <p>我们是潜藏在北京工业大学的⼀个工作室(当然咯,以社团名义注册),以网配为主业,在出作品的同时愉快的玩耍。</p>
+          <p>这里是喜爱网配的同学们发挥⾃己才能,共同成长的地方,同时也是学校中一群互不相识的人缘分的起点,我们都爱网配,所以我们都来到这个社团,希望以后能够走到⼀起。⼤学只有四年,但是我们都希望我们因为网配的到的这份友谊能够⻓长久久。</p>
+          <p>对于酱油党,希望大家能够通过这个契机伴我们⼀起成长;对于有志之士们,希望这⾥是大家在这所⼤学中梦开始的地⽅;对于⼀切爱这⾥的⼈,希望⼤家永远不离不弃。</p>
+          <p>我们还刚起步,相信以后会有很⼤的进步空间。 希望⼤家继续关注我们!~</p>
+        </footer>
+      </footer>
+      <footer id="page4plus" class="paper">
+        <h1>声明</h1>
+        <hr class="linefortop">
+        <footer class="articleforpages" id="articleforpage5">
+          <p>作品中所用的配乐、音效均来自互联网，其著作权归原作者所有。</p>
+          <p>本作品仅供配音爱好者学习、交流使用，请勿进行二次修改和用于商业用途。</p>
+          <p>转载时请保留以上信息完整，谢谢合作！</p>
+        </footer>
+      </footer>
+    <footer id="page5justforshadow" class="paper"></footer>
+    <footer id="mforenglish" class="boxform"><a class="holeforword" class="boxform" id="M" href="http://news.missevan.cn/sound/79660/" title="到missevan（M站）去听。" target="_blacnk">喵</a></footer>
+    <footer id="weibofenglish" class="boxform"><a class="holeforword" class="boxform" id="S" href="http://weibo.com/bjutstudio" title="到我们的官方微博去看看吧！" target="_blacnk">浪</a></footer>
+    <footer id="baiyunfeng" class="boxform"><a class="holeforword" class="boxform" id="B" href="http://yun.baidu.com/s/1ntGlVj7" title="到白云去下载音频和其他资料" target="_blacnk">百</a></footer>
+    <footer id="ximafeng" class="boxform"><a class="holeforword" class="boxform" id="X" href="http://www.ximalaya.com/#/32939988/sound/10214147" title="到missevan（M站）去听。" target="_blacnk">喜</a></footer>
+  </footer>
+</body>
+</html>

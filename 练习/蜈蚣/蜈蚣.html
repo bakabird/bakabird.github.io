@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>canvas_test</title>
+    <style type="text/css">
+    body {
+        background: #6bf;
+    }
+
+    #warp {
+        width: 1080px;
+        height: 960px;
+        margin: 0 auto;
+        background: #6cf;
+    }
+
+    #mimi {
+        margin: 0 auto;
+        display: block;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="warp">
+        <canvas id="mimi" width="800px" height="600px"></canvas>
+    </div>
+</body>
+<script type="text/javascript">
+// 获取画布环境
+var canvas = document.getElementById('mimi');
+var ctx = canvas.getContext("2d");
+// 获取图片素材
+var img_pin = new Image();
+img_pin.src = "img_5.png";
+var img_bg = new Image();
+img_bg.src = "img_1.jpg";
+// 贴上去
+
+var pin1 = new pin();
+window.onload = () => {
+
+    setInterval(function () {
+      // ctx.drawImage(img_bg, 0, 0, 800, 600);
+      pin1.paint();
+    }, 50)
+};
+
+function pin() {
+    this.scale = Math.floor(Math.random() * 71 + 30) / 100;
+    this.X = Math.floor(Math.random() * (800 - 100 * this.scale));
+    this.Y = Math.floor(Math.random() * (600 - 100 * this.scale));
+    this.step = Math.floor(Math.random() * 50 + 1);
+
+    this.paint = () => {
+      this.step = Math.floor(Math.random() * 50 + 1);
+        this.Y += this.step;
+        ctx.save();
+        ctx.translate(this.X, this.Y)
+        ctx.scale(this.scale, this.scale);
+        ctx.drawImage(img_pin,0,0);
+        ctx.restore();
+        if (this.Y >= 600) {
+            this.Y = -img_pin.naturalHeight;
+            this.X = Math.floor(Math.random() * (800 - 100 * this.scale));
+
+        }
+    }
+};
+</script>
+
+</html>
